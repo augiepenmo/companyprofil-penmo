@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-scroll{
+    background: rgb(220 38 38);
+    box-shadow:
+        0 8px 16px rgba(0,0,0,.15),
+        0 16px 40px rgba(0,0,0,.12);
+}
+
+.hero-text,
+.hero-image{
+    opacity: 0;
+    transform: translateY(60px);
+    animation: fadeUp 1s ease forwards;
+}
+
+.hero-image{
+    animation-delay: .3s;
+}
+
+.menuSwiper {
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    transition: .2s;
+}
+
+.swiper-slide:hover {
+    transform: translateY(-8px);
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(60px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}

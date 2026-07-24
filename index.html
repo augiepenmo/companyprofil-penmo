@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penmo.id</title>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar-scroll {
+            background: var(--color-red-600);
+            box-shadow: 0 4px 15px rgba(0,0,0,.08);
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- ================= NAVBAR ================= -->
+    <header id="navbar" class="fixed top-0 left-0 z-50 w-full bg-white shadow-xl transition-all duration-300">
+
+        <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-5">
+
+            <img width="80" src="src/assets/logo.png" alt="Logo Penmo">
+
+            <ul class="hidden md:flex gap-8">
+                <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
+                <li><a href="#about" class="hover:text-yellow-300">About</a></li>
+                <li><a href="#menu" class="hover:text-yellow-300">Menu</a></li>
+                <li><a href="#review" class="hover:text-yellow-300">Review</a></li>
+                <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
+            </ul>
+
+            <button id="menuBtn" class="text-3xl md:hidden">
+                ☰
+            </button>
+
+        </nav>
+
+        <div id="mobileMenu" class="hidden bg-red-600 text-yellow-300 border-t md:hidden">
+            <a href="#home" class="block p-4">Home</a>
+            <a href="#about" class="block p-4">About</a>
+            <a href="#menu" class="block p-4">Menu</a>
+            <a href="#review" class="block p-4">Review</a>
+            <a href="#contact" class="block p-4">Contact</a>
+        </div>
+
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section id="home" class="py-32 flex items-center">
+
+        <div class="max-w-7xl mx-auto grid items-center gap-10 px-6 md:grid-cols-2">
+
+            <div class="hero-text">
+
+                <span class="rounded-full bg-red-100 px-4 py-2 text-red-600">
+                    PENMO
+                </span>
+
+                <h1 class="mt-6 text-6xl font-bold leading-tight md:text-6xl">
+                    Jajanan Tradisional
+                    <span class="text-red-600">
+                        Khas Solo
+                    </span>
+                </h1>
+
+                <p class="mt-2 text-lg text-black">
+
+                    Penmo menghadirkan jajanan tradisional khas Solo dengan cita rasa autentik. Dibuat dari bahan pilihan dan resep turun-temurun untuk menghadirkan pengalaman kuliner yang lezat dan berkualitas.
+
+                </p>
+
+                <!-- Social Media -->
+        <div class="mt-6 flex gap-4">
+
+            <a href="https://www.tiktok.com/@penmo.id?is_from_webapp=1&sender_device=pc" target="_blank" class="bg-red-600 w-14 h-14 rounded-xl flex items-center justify-center hover:scale-110 transition">
+            <img src="src/assets/tiktok.svg" alt="TikTok" class=" w-8 h-8">
+            </a>
+
+            <a href="https://www.instagram.com/penmo.id?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="bg-red-600 w-14 h-14 rounded-xl flex items-center justify-center hover:scale-110 transition">
+            <img src="src/assets/instagram.svg" alt="Instagram" class=" w-8 h-8">
+            </a>
+
+        </div>
+
+                <div class="mt-8 flex gap-4">
+                    <a href="#contact"
+                        class="rounded-lg bg-red-600 px-6 py-3 text-yellow-300 hover:bg-red-700">
+                        Hubungi Kami
+                    </a>
+
+                    <a href="#menu"
+                        class="rounded-lg border px-6 py-3 hover:bg-gray-200">
+                        Menu
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+                <img src="src/assets/gambar1.png" class="w-full transition-transform duration-500 hover:scale-105">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="bg-white py-24">
+
+        <div class="max-w-6xl mx-auto px-6 text-center">
+
+            <h2 class="text-4xl font-bold">
+                Tentang Kami
+            </h2>
+
+            <p class="mt-6 text-gray-600">
+
+                Penmo adalah brand kuliner yang berfokus pada jajanan tradisional khas Solo, yaitu Pentol Bakso Solo. Penmo hadir dengan konsep modern street food yang menyajikan cita rasa autentik namun tetap higienis, praktis, dan sesuai dengan selera masyarakat modern.
+                
+                Didirikan pada tahun 2017, Penmo berkembang sebagai brand yang mengutamakan kualitas bahan, kebersihan proses, serta pengalaman pelanggan yang menyenangkan melalui kemasan dan pelayanan yang profesional.
+                
+                Penmo melayani berbagai kebutuhan konsumen, baik untuk ready-to-eat, takeaway, maupun kebutuhan event & katering kecil.
+                
+            </p>
+
+            <div class="mt-16 grid gap-8 md:grid-cols-3">
+
+                <div class="group rounded-xl bg-red-600 p-8 text-center shadow-lg transition-all duration-350 hover:-translate-y-2 hover:scale-105">
+                    <h3 class="text-4xl font-bold text-yellow-300">8+</h3>
+                    <p class="mt-3 text-white">Tahun Pengalaman</p>
+                </div>
+
+                <div class="group rounded-xl bg-red-600 p-8 text-center shadow-lg transition-all duration-350 hover:-translate-y-2 hover:scale-105">
+                    <h3 class="text-4xl font-bold text-yellow-300">250+</h3>
+                    <p class="mt-3 text-white">Pelanggan</p>
+                </div>
+
+                <div class="group rounded-xl bg-red-600 p-8 text-center shadow-lg transition-all duration-350 hover:-translate-y-2 hover:scale-105">
+                    <h3 class="text-4xl font-bold text-yellow-300">100%</h3>
+                    <p class="mt-3 text-white">Rasa Autentik</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= MENU ================= -->
+    <section id="menu" class="py-24 bg-gray-100">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <h2 class="text-center text-4xl font-bold mb-14">
+            Menu
+        </h2>
+
+        <div class="swiper menuSwiper">
+
+            <div class="swiper-wrapper">
+
+                <!-- Card 1 -->
+                <div class="swiper-slide">
+                    <div class="bg-red-600 rounded-xl shadow-md overflow-hidden">
+                        <img src="src/assets/pentolpolos.png" class="w-full h-72 object-cover">
+
+                        <div class="p-4 text-center">
+                            <h3 class="text-xl font-bold text-yellow-300">
+                                Pentol Polos
+                            </h3>
+
+                            <p class="text-white mt-2">
+                                Pentol khas Solo dengan cita rasa autentik.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="swiper-slide">
+                    <div class="bg-red-600 rounded-xl shadow-md overflow-hidden">
+                        <img src="src/assets/pentolurat.png" class="w-full h-72 object-cover">
+
+                        <div class="p-4 text-center">
+                            <h3 class="text-xl font-bold text-yellow-300">
+                                Pentol Urat
+                            </h3>
+
+                            <p class="text-white mt-2">
+                                Pentol khas Solo dengan cita rasa autentik.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="swiper-slide">
+                    <div class="bg-red-600 rounded-xl shadow-md overflow-hidden">
+                        <img src="src/assets/tahubakso.png" class="w-full h-72 object-cover">
+
+                        <div class="p-4 text-center">
+                            <h3 class="text-xl font-bold text-yellow-300">
+                                Tahu Bakso
+                            </h3>
+
+                            <p class="text-white mt-2">
+                                Pentol khas Solo dengan cita rasa autentik.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="swiper-slide">
+                    <div class="bg-red-600 rounded-xl shadow-md overflow-hidden">
+                        <img src="src/assets/pentolbakar.png" class="w-full h-72 object-cover">
+
+                        <div class="p-4 text-center">
+                            <h3 class="text-xl font-bold text-yellow-300">
+                                Pentol Bakar
+                            </h3>
+
+                            <p class="text-white mt-2">
+                                Pentol khas Solo dengan cita rasa autentik.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="swiper-slide">
+                    <div class="bg-red-600 rounded-xl shadow-md overflow-hidden">
+                        <img src="src/assets/tahubakar.png" class="w-full h-72 object-cover">
+
+                        <div class="p-4 text-center">
+                            <h3 class="text-xl font-bold text-yellow-300">
+                                Tahu Bakso Bakar
+                            </h3>
+
+                            <p class="text-white mt-2">
+                                Pentol khas Solo dengan cita rasa autentik.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination mt-10"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- ================= REVIEW ================= -->
+<section id="review" class="bg-white py-24">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <h2 class="text-center text-4xl font-bold mb-14">
+            Testimoni Pelanggan
+        </h2>
+
+        <div class="grid gap-8 md:grid-cols-2">
+
+            <!-- Review 1 -->
+            <div class="bg-red-600 border rounded-2xl p-6 shadow-md transition-all duration-500 ease-in-out hover:-translate-y-3 hover:shadow-2xl hover:scale-[1.02] hover:bg-red-600 cursor-pointer">
+                <div class="flex justify-between items-start">
+
+                    <div class="flex gap-4">
+                        <img src="https://i.pravatar.cc/100?img=12"
+                            class="w-16 h-16 rounded-full object-cover">
+
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">
+                                Andrean Danu
+                            </h3>
+
+                            <p class="text-sm font-semibold uppercase text-yellow-300">
+                                IT Support
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="text-yellow-300 text-xl">
+                        ★★★★★
+                    </div>
+
+                </div>
+
+                <p class="mt-5 text-white text-lg leading-6">
+                    "Lorem ipsum dolor sit amet consectetur adipiscing elit aliquet magna ullamcorper, convallis vulputate nisi nec habitasse auctor egestas ultricies purus consequat."
+                </p>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="bg-red-600 border rounded-2xl p-6 shadow-md transition-all duration-500 ease-in-out hover:-translate-y-3 hover:shadow-2xl hover:scale-[1.02] hover:bg-red-600 cursor-pointer">
+                <div class="flex justify-between items-start">
+
+                    <div class="flex gap-4">
+                        <img src="https://i.pravatar.cc/100?img=32"
+                            class="w-16 h-16 rounded-full object-cover">
+
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">
+                                Reifsty
+                            </h3>
+
+                            <p class="text-sm font-semibold uppercase text-yellow-300">
+                                Brand Marketing
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="text-yellow-300 text-xl">
+                        ★★★★★
+                    </div>
+
+                </div>
+
+                <p class="mt-5 text-white text-lg leading-6">
+                    "Lorem ipsum dolor sit amet consectetur adipiscing elit aliquet magna ullamcorper, convallis vulputate nisi nec habitasse auctor egestas ultricies purus consequat."
+                </p>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="bg-red-600 border rounded-2xl p-6 shadow-md transition-all duration-500 ease-in-out hover:-translate-y-3 hover:shadow-2xl hover:scale-[1.02] hover:bg-red-600 cursor-pointer">
+                <div class="flex justify-between items-start">
+
+                    <div class="flex gap-4">
+                        <img src="https://i.pravatar.cc/100?img=47"
+                            class="w-16 h-16 rounded-full object-cover">
+
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">
+                                Tabita Friska
+                            </h3>
+
+                            <p class="text-sm font-semibold uppercase text-yellow-300">
+                                Human Resource Development
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="text-yellow-300 text-xl">
+                        ★★★★★
+                    </div>
+
+                </div>
+
+                <p class="mt-5 text-white text-lg leading-6">
+                    "Lorem ipsum dolor sit amet consectetur adipiscing elit aliquet magna ullamcorper, convallis vulputate nisi nec habitasse auctor egestas ultricies purus consequat."
+                </p>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="bg-red-600 border rounded-2xl p-6 shadow-md transition-all duration-500 ease-in-out hover:-translate-y-3 hover:shadow-2xl hover:scale-[1.02] hover:bg-red-600 cursor-pointer">
+                <div class="flex justify-between items-start">
+
+                    <div class="flex gap-4">
+                        <img src="https://i.pravatar.cc/100?img=21"
+                            class="w-16 h-16 rounded-full object-cover">
+
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">
+                                Theofani Berlian
+                            </h3>
+
+                            <p class="text-sm font-semibold uppercase text-yellow-300">
+                                Finance Administration
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="text-yellow-300 text-xl">
+                        ★★★★★
+                    </div>
+
+                </div>
+
+                <p class="mt-5 text-white text-lg leading-6">
+                    "Lorem ipsum dolor sit amet consectetur adipiscing elit aliquet magna ullamcorper, convallis vulputate nisi nec habitasse auctor egestas ultricies purus consequat."
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="py-24">
+
+        <div class="max-w-xl mx-auto px-6">
+
+            <h2 class="text-center text-4xl font-bold">
+                Hubungi Kami
+            </h2>
+
+            <form id="contactForm" class="mt-10 space-y-5">
+
+                <input
+                    type="text"
+                    placeholder="Nama"
+                    class="w-full rounded-lg border p-4">
+
+                <input
+                    type="email"
+                    placeholder="Email"
+                    class="w-full rounded-lg border p-4">
+
+                <textarea
+                    rows="5"
+                    placeholder="Pesan"
+                    class="w-full rounded-lg border p-4">
+                </textarea>
+
+                <button
+                    class="w-full rounded-lg bg-red-600 px-8 py-4 text-yellow-300 hover:bg-red-700">
+                    Kirim Pesan
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- ================= MAPS ================= -->
+    <section id="about" class="bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <img src="src/assets/petasebarpenmo.png">
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-black text-white">
+
+    <div class="max-w-7xl mx-auto px-6 py-10">
+
+        <div class="grid gap-10 md:grid-cols-4">
+
+            <!-- Logo -->
+            <div class="flex justify-center items-center pt-8">
+                <img src="src/assets/logo.png" alt="Logo Penmo" class="w-36">
+            </div>
+
+            <!-- Navbar -->
+            <div>
+                <h3 class="text-xl font-semibold text-yellow-300 mb-5">
+                    Menu
+                </h3>
+
+                <ul class="space-y-3">
+
+                    <li>
+                        <a href="#home" class="hover:text-yellow-300 transition">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="hover:text-yellow-300 transition">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#menu" class="hover:text-yellow-300 transition">
+                            Menu
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#review" class="hover:text-yellow-300 transition">
+                            Review
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="hover:text-yellow-300 transition">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- Kontak -->
+            <div>
+
+                <h3 class="text-xl font-semibold text-yellow-300 mb-5">
+                    Hubungi Kami
+                </h3>
+
+                <ul class="space-y-3">
+
+                    <li>
+                        <a href="https://wa.me/62895402952077" target="_blank" class="flex items-center gap-3 hover:text-yellow-300 transition">
+                            <img src="src/assets/phone.svg" alt="Phone" class="w-5 h-5">
+                            <span>0895402952077</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://instagram.com/penmo.id" target="_blank" class="flex items-center gap-3 hover:text-yellow-300 transition">
+                            <img src="src/assets/instagram.svg" alt="Instagram" class="w-5 h-5">
+                            <span>penmo.id</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.tiktok.com/@penmo.id?is_from_webapp=1&sender_device=pc" target="_blank" class="flex items-center gap-3 hover:text-yellow-300 transition">
+                            <img src="src/assets/tiktok.svg" alt="Tiktok" class="w-5 h-5">
+                            <span>penmo.id</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:penmojaya@gmail.com" class="flex items-center gap-3 hover:text-yellow-300 transition">
+                            <img src="src/assets/email.svg" alt="Email" class="w-5 h-5">
+                            <span>penmojaya@gmail.com</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Alamat -->
+            <div>
+
+                <h3 class="text-xl font-semibold text-yellow-300 mb-5">
+                    Alamat
+                </h3>
+
+                <div>
+                    <a href="https://maps.app.goo.gl/ZyGCMbC44fJpJzsu8" target="_blank" class="flex items-start gap-2 hover:text-yellow-300 transition">
+                        <img src="src/assets/location.svg" alt="Instagram" class="w-5 h-5">
+                        <span>Jl. Cocak V Gg. VI No.1, Mangkubumen, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57139</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Garis -->
+        <div class="border-t border-gray-400 mt-5 pt-6">
+
+            <p class="text-center text-gray-400">
+                © 2026 <span class="text-yellow-300 font-semibold">Penmo</span>. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<div class="fixed bottom-6 right-6 z-50 group">
+
+    <!-- Tooltip -->
+    <div class="absolute right-20 top-1/2 -translate-y-1/2
+                bg-gray-900 text-white
+                text-sm px-4 py-2 rounded-lg
+                opacity-0 group-hover:opacity-100
+                transition-all duration-300 whitespace-nowrap">
+
+        Chat via WhatsApp
+    </div>
+
+    <!-- Tombol -->
+    <a href="https://wa.me/62895402952077"
+       target="_blank"
+       class="w-14 h-14
+              rounded-full
+              bg-green-500
+              shadow-2xl
+              hover:scale-110
+              transition-all duration-300
+              flex items-center justify-center">
+
+        <div>
+            <img src="src/assets/wa.svg"
+                 class="w-7 h-7 w"
+                 alt="WhatsApp">
+        </div>
+
+    </a>
+
+</div>
+
+    <script type="module" src="/src/main.js"></script>
+
+</body>
+</html>

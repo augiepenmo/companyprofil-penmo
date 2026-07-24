@@ -1,0 +1,24 @@
+{
+  "name": "companyprofil-penmo",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.5.3",
+    "postcss": "^8.5.19",
+    "tailwindcss": "^4.3.2",
+    "vite": "^8.1.1"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.2",
+    "@tailwindcss/vite": "^4.3.2",
+    "aos": "^2.3.4",
+    "react-icons": "^5.7.0",
+    "swiper": "^14.0.6"
+  }
+}
