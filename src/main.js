@@ -60,9 +60,3 @@ window.addEventListener("scroll", () => {
         navbar.classList.remove("navbar-scroll");
     }
 });
-
-// ================= CONTACT =================
-document.getElementById("contactForm").addEventListener("submit", (e) => {
-    e.preventDefault();
-    alert("Terima kasih! Pesan Anda berhasil dikirim.");
-});
