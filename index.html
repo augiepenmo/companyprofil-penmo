@@ -20,8 +20,8 @@
             color: white;
         }
     </style>
-  <script type="module" crossorigin src="/companyprofil-penmo/assets/index-CUrqhigo.js"></script>
-  <link rel="stylesheet" crossorigin href="/companyprofil-penmo/assets/index-B9eVGBDi.css">
+  <script type="module" crossorigin src="/companyprofil-penmo/assets/index-BRLeVVbT.js"></script>
+  <link rel="stylesheet" crossorigin href="/companyprofil-penmo/assets/index-CRPzBz24.css">
 </head>
 
 <body class="bg-gray-100">
@@ -82,19 +82,19 @@
                 </p>
 
                 <!-- Social Media -->
-        <div class="mt-6 flex gap-4">
+        <div class="mt-4 flex gap-4">
 
-            <a href="https://www.tiktok.com/@penmo.id?is_from_webapp=1&sender_device=pc" target="_blank" class="bg-red-600 w-14 h-14 rounded-xl flex items-center justify-center hover:scale-110 transition">
-            <img src="/companyprofil-penmo/assets/tiktok-HyW4NycZ.svg" alt="TikTok" class=" w-8 h-8">
+            <a href="https://www.tiktok.com/@penmo.id?is_from_webapp=1&sender_device=pc" target="_blank" class="bg-red-600 w-11 h-11 rounded-xl flex items-center justify-center hover:scale-110 transition">
+            <img src="/companyprofil-penmo/assets/tiktok-HyW4NycZ.svg" alt="TikTok" class=" w-6 h-6">
             </a>
 
-            <a href="https://www.instagram.com/penmo.id?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="bg-red-600 w-14 h-14 rounded-xl flex items-center justify-center hover:scale-110 transition">
-            <img src="/companyprofil-penmo/assets/instagram-C7vEdri7.svg" alt="Instagram" class=" w-8 h-8">
+            <a href="https://www.instagram.com/penmo.id?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="bg-red-600 w-11 h-11 rounded-xl flex items-center justify-center hover:scale-110 transition">
+            <img src="/companyprofil-penmo/assets/instagram-C7vEdri7.svg" alt="Instagram" class=" w-6 h-6">
             </a>
 
         </div>
 
-                <div class="mt-8 flex gap-4">
+                <div class="mt-6 flex gap-4">
                     <a href="#contact"
                         class="rounded-lg bg-red-600 px-6 py-3 text-yellow-300 hover:bg-red-700">
                         Hubungi Kami
@@ -424,7 +424,8 @@
                 name="pesan"
                 placeholder="Pesan"
                 class="w-full rounded-lg border p-4"
-                required></textarea>
+                required>
+            </textarea>
 
             <button
                 type="submit"
@@ -580,36 +581,49 @@
 
 </footer>
 
-<div class="fixed bottom-6 right-6 z-50 group">
+<div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3 items-end">
 
-    <!-- Tooltip -->
-    <div class="absolute right-20 top-1/2 -translate-y-1/2
-                bg-gray-900 text-white
-                text-sm px-4 py-2 rounded-lg
-                opacity-0 group-hover:opacity-100
-                transition-all duration-300 whitespace-nowrap">
+    <!-- Back To Top -->
+    <button
+        id="backToTop"
+        class="hidden w-14 h-14 rounded-full bg-red-600
+               hover:bg-red-700 text-yellow-300 shadow-xl
+               transition duration-300 border-3 border-yellow-300">
 
-        Chat via WhatsApp
-    </div>
+        ↑
 
-    <!-- Tombol -->
-    <a href="https://wa.me/62895402952077"
-       target="_blank"
-       class="w-14 h-14
-              rounded-full
-              bg-green-500
-              shadow-2xl
-              hover:scale-110
-              transition-all duration-300
-              flex items-center justify-center">
+    </button>
 
-        <div>
-            <img src="/companyprofil-penmo/assets/wa-CZ_usBs3.svg"
-                 class="w-7 h-7 w"
-                 alt="WhatsApp">
+    <!-- WhatsApp -->
+    <div class="group relative">
+
+        <div
+            class="absolute right-16 top-1/2 -translate-y-1/2
+                   bg-gray-900 text-white
+                   text-sm px-3 py-2 rounded-lg
+                   opacity-0 group-hover:opacity-100
+                   transition whitespace-nowrap">
+
+            Chat via WhatsApp
+
         </div>
 
-    </a>
+        <a
+            href="https://wa.me/62895402952077"
+            target="_blank"
+            class="flex items-center justify-center
+                   w-14 h-14 rounded-full
+                   bg-green-500 shadow-2xl
+                   hover:scale-110 transition">
+
+            <img
+                src="/companyprofil-penmo/assets/wa-CZ_usBs3.svg"
+                class="w-7 h-7"
+                alt="WhatsApp">
+
+        </a>
+
+    </div>
 
 </div>
 
