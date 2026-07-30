@@ -1,19 +1,17 @@
 import "./style.css";
 
-// Import Swiper
+// ================= IMPORT SWIPER =================
 import Swiper from "swiper";
 import { Autoplay, Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
 
-// Inisialisasi Swiper
+// ================= SWIPER =================
 new Swiper(".menuSwiper", {
     modules: [Autoplay, Pagination],
 
     loop: true,
-
-    // Tambahkan ini
     speed: 500,
 
     autoplay: {
@@ -46,13 +44,17 @@ new Swiper(".menuSwiper", {
 const menuBtn = document.getElementById("menuBtn");
 const mobileMenu = document.getElementById("mobileMenu");
 
-menuBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-});
+if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+    });
+}
 
 // ================= NAVBAR =================
+const navbar = document.getElementById("navbar");
+
 window.addEventListener("scroll", () => {
-    const navbar = document.getElementById("navbar");
+    if (!navbar) return;
 
     if (window.scrollY > 50) {
         navbar.classList.add("navbar-scroll");
@@ -60,3 +62,25 @@ window.addEventListener("scroll", () => {
         navbar.classList.remove("navbar-scroll");
     }
 });
+
+// ================= BACK TO TOP =================
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+    if (!backToTop) return;
+
+    if (window.scrollY > 300) {
+        backToTop.classList.remove("hidden");
+    } else {
+        backToTop.classList.add("hidden");
+    }
+});
+
+if (backToTop) {
+    backToTop.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    });
+}
