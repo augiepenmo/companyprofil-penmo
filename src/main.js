@@ -71,7 +71,9 @@ window.addEventListener("scroll", () => {
 
     if (window.scrollY > 300) {
         backToTop.classList.remove("hidden");
+        backToTop.classList.add("flex");
     } else {
+        backToTop.classList.remove("flex");
         backToTop.classList.add("hidden");
     }
 });
