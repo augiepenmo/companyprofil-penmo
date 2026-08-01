@@ -12,15 +12,12 @@ html{
     scroll-behavior:smooth;
 }
 
-body{
-    font-family: var(--font-inter);
-}
-
 .navbar-scroll{
     background:rgb(220 38 38);
     box-shadow:
         0 8px 16px rgba(0,0,0,.15),
         0 16px 40px rgba(0,0,0,.12);
+    color:white;
 }
 
 .hero-text,
@@ -34,20 +31,7 @@ body{
     animation-delay:.3s;
 }
 
-.menuSwiper{
-    padding-bottom:50px;
-}
-
-.swiper-slide{
-    transition:.2s;
-}
-
-.swiper-slide:hover{
-    transform:translateY(-8px);
-}
-
 @keyframes fadeUp{
-
     from{
         opacity:0;
         transform:translateY(60px);
@@ -57,5 +41,4 @@ body{
         opacity:1;
         transform:translateY(0);
     }
-
 }
