@@ -6,12 +6,14 @@ import { Autoplay, Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 // ================= SWIPER =================
 new Swiper(".menuSwiper", {
-    modules: [Autoplay, Pagination],
+    modules: [Autoplay, Pagination, Navigation],
 
     loop: true,
+
     speed: 500,
 
     autoplay: {
@@ -23,6 +25,11 @@ new Swiper(".menuSwiper", {
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
+    },
+
+    navigation: {
+        prevEl: ".menu-prev",
+        nextEl: ".menu-next",
     },
 
     spaceBetween: 20,
